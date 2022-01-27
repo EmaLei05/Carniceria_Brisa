@@ -80,6 +80,10 @@ p span{
     display: block;
 }
 
+section article:hover{
+    border: 1px solid black;
+}
+
 /*Index*/
 
 .gridIndex{
@@ -152,11 +156,6 @@ footer{
     margin-top: 15px;
 }
 
-.elegirnos_img{
-    width: 350px;
-    height: 350px;
-}
-
 .aleatorio_carta{
     display: flex;
     flex-flow: row nowrap;
@@ -164,8 +163,10 @@ footer{
 }
 
 .aleatorio_articulos{
+    width: 400px;
     margin-right: 100px;
     margin-top: 15px;
+    margin-bottom: 10px;
 }
 
 .elegirnos_img{
@@ -188,27 +189,33 @@ footer{
 
 .gridProductos{
     grid-template-areas: 
-    "cabeza cabeza cabeza"
-    "menu menu menu"
-    "pagos pagos pagos"
-    "pollo pollo pollo"
-    "cerdo cerdo cerdo"
-    "vaca vaca vaca"
-    "pie pie pie";
+    "cabeza"
+    "secu"
+    "pagos"
+    "pollo"
+    "cerdo"
+    "vaca"
+    "pie";
+}
+
+.secu{
+    grid-area: secu;
+    background-color: red;
+    margin-bottom: 5px;
+    width: 100%;
+    height: 50px;
 }
 
 .menuSecundario{
-    grid-area: menu;
-    background-color: red;
-    margin-left: 500px;
-    margin-bottom:5px;
-    margin-top: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .menuSecundario_item{
-    margin-right: 100px;
+    text-align: center;
+    width: 70px;
 }
-
 .pagos{
     grid-area: pagos;
     background-image: linear-gradient(red,goldenrod);
@@ -235,6 +242,7 @@ footer{
 
 .img_flex{
     display: flex;
+    margin-bottom: 5px;
 }
 
 .caja_articulos{
