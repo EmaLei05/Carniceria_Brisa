@@ -32,7 +32,7 @@ header h1{
 h2{
     text-align: center;
     margin-top: 10px;
-    color: rgb(87, 87, 59);
+    color: wheat;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -55,8 +55,25 @@ article p span{
     display: block;
 }
 
+li{
+    color: honeydew;
+}
+
 p{
-    font-family: 'Roboto Slab', serif;;
+    font-family: 'Roboto Slab', serif;
+    color: honeydew;
+}
+
+a{
+    font-family: 'Roboto Slab', serif;
+    text-decoration: none;
+    color: goldenrod;
+    font-weight: bold;
+}
+
+a:hover{
+    color: blue;
+    text-decoration: underline;
 }
 
 p span{
@@ -90,13 +107,13 @@ header{
 .elegirnos{
     grid-area: brazo;
     margin-bottom: 5px;
-    background-color: goldenrod;
+    background-image: linear-gradient(red,goldenrod);
 }
 
 .aleatorios{
     grid-area: pierna;
     margin-bottom: 5px;
-    background-color: goldenrod;
+    background-image: linear-gradient(to top,red,goldenrod);
 }
 
 footer{
@@ -116,6 +133,7 @@ footer{
     display: flex;
     width: 100px;
     height: 30px;
+    text-align: center;
 }
 
 .carrusel_imagenes{
@@ -189,12 +207,11 @@ footer{
 
 .menuSecundario_item{
     margin-right: 100px;
-    text-decoration: none;
 }
 
 .pagos{
     grid-area: pagos;
-    background-color: goldenrod;
+    background-image: linear-gradient(red,goldenrod);
     margin-bottom: 5px;
 }
 
@@ -212,7 +229,7 @@ footer{
 
 .vacas{
     grid-area: vaca;
-    background-color: goldenrod;
+    background-image: linear-gradient(to top, red,goldenrod);
     margin-bottom: 5px;
 }
 
@@ -248,14 +265,14 @@ footer{
 
 .receta1{
     grid-area: receta1;
-    background-color: goldenrod;
+    background-image: linear-gradient(red,goldenrod);
     margin-top: 5px;
     padding-left: 20px;
 }
 
 .receta2{
     grid-area: receta1;
-    background-color: goldenrod;
+    background-image: linear-gradient(to top,red,goldenrod);
     margin-top: 5px;
     padding-left: 20px;
 }
@@ -280,7 +297,7 @@ footer{
 
 .Historia{
     grid-area: nosotros;
-    background-color: goldenrod;
+    background-image: linear-gradient(red,goldenrod);
 }
 
 .Productos{
@@ -291,12 +308,13 @@ footer{
 
 .Calidad{
     grid-area: calidad;
-    background-color: goldenrod;
+    background-image: linear-gradient(to top, red,goldenrod);
     margin-top: 5px;
 }
 
 .nosotros_flex{
     display: flex;
+    justify-content: space-between;
 }
 
 .img_nosotros{
@@ -307,7 +325,7 @@ footer{
 /*Provedores*/
 
 .contenedores{
-    background-color: goldenrod;
+    background-image: linear-gradient(red,goldenrod, red);
     padding-left: 40px;
 }
 
@@ -329,13 +347,13 @@ footer{
 .contacto{
     grid-area: contacto;
     justify-content: center;
-    background-color: goldenrod;
+    background-image: linear-gradient(red,goldenrod);
     margin-top: 5px;
 }
 
 .form{
     grid-area: formulario;
-    background-color: goldenrod;
+    background-image: linear-gradient(to top,red,goldenrod);
     margin-top: 5px;
 }
 
@@ -399,12 +417,6 @@ footer{
 
     /*General*/
 
-    @font-face {
-        font-family: 'Roboto', sans-serif;
-        font-family: 'Roboto Slab', serif;
-        src: url(https://fonts.google.com/specimen/Roboto+Slab?query=roboto+slab#standard-styles);
-    }
-
     header{
         grid-area: cabeza;
         width: 100%;
@@ -421,7 +433,9 @@ footer{
     .menuItem{
         display: flex;
         margin-left: 30px;
+        justify-content: center;
         text-decoration: none;
+        margin-left: 50px;
         margin-top: 10px;
         width: 80%;
         height: 30px;
@@ -429,72 +443,79 @@ footer{
         background-color: rgb(186, 182, 182);
     }
     
-    footer{
-        grid-area: pie;
-        height: 50px;
-        width: 100%;
-        background-color: red;
-    }
-
-    .footer_flex{
-        display: flex;
-        justify-content: space-between;
-    }
-    
-    .footer_img{
-        width: 50px;
-        height: 50px;
-    }
 
     .border{
         border: black;
         border-style: solid;
         border-width: 1px;
     }
-    
+
     body{
         width: 100%;
         height: 100vh;
         background-color: rgb(186, 186, 186);
     }
-    
+
     header h1{
         color: yellow;
         font-family: 'Roboto', sans-serif;
     }
-    
+
     h2{
         text-align: center;
         margin-top: 10px;
-        color: rgb(87, 87, 59);
+        color: wheat;
         font-family: 'Roboto', sans-serif;
     }
-    
+
     h4{
         color: yellow;
         text-align: center;
         font-family: 'Roboto', sans-serif;
     }
-    
+
     article{
         width: 350px;
         height: 400px;
     }
-    
+
     article p{
         text-align: center;
     }
-    
+
     article p span{
         display: block;
     }
-    
-    p{
-        font-family: 'Roboto Slab', serif;;
+
+    li{
+        color: honeydew;
     }
-    
+
+    p{
+        font-family: 'Roboto Slab', serif;
+        color: honeydew;
+    }
+
+    a{
+        font-family: 'Roboto Slab', serif;
+        text-decoration: none;
+        color: goldenrod;
+        font-weight: bold;
+    }
+
+    a:hover{
+        color: blue;
+        text-decoration: underline;
+    }
+
     p span{
         display: block;
+    }
+
+    @font-face {
+        font-family: 'Roboto', sans-serif;
+        font-family: 'Roboto Slab', serif;
+        src: url(https://fonts.google.com/specimen/Roboto+Slab?query=roboto+slab#standard-styles);
     }
 
     /*Index*/
@@ -618,11 +639,11 @@ footer{
     .gridNosotros{
         display: grid;
         grid-template-areas: 
-        "cabeza cabeza cabeza"
-        "nosotros nosotros nosotros"
-        "producto producto producto"
-        "calidad calidad calidad"
-        "pie pie pie";
+        "cabeza"
+        "nosotros"
+        "producto"
+        "calidad"
+        "pie";
     }
     
     .Historia{
@@ -725,6 +746,7 @@ footer{
         display: grid;
         grid-template-areas:
         "cabeza"
+        "secu"
         "pagos"
         "pollo"
         "cerdo"
@@ -732,22 +754,22 @@ footer{
         "pie";
     }
     
+    .secu{
+        grid-area: secu;
+        background-color: red;
+        margin-bottom: 5px;
+    }
+
     .menuSecundario{
-        width: 100px;
-        height: 20px;
-        margin-top: 20px;
-        position: relative;
-        right: 400px;
         display: flex;
         flex-direction: row;
-        background-color: red;
+        margin-left: 50px;
     }
 
     .menuSecundario_item{
+        border: black solid 1px;
+        text-align: center;
         width: 70px;
-        height: 20px;
-        border: solid 1px;
-        background-color: rgb(186, 182, 182);
     }
     
     .pagos{
@@ -777,11 +799,14 @@ footer{
     .img_flex{
         display: flex;
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
     
     .caja_articulos{
-        width: 60%;
-        height: 40vh;
+        width: 400px;
+        height: 200px;
+        padding-bottom: 50px;
     }
     
     .articulo_img{
