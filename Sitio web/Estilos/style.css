@@ -89,6 +89,44 @@ section article:hover{
     text-decoration: underline;
 }
 
+<<<<<<< HEAD
+=======
+.tituloAnimado{
+    animation-name: titulo;
+    animation-iteration-count: 1;
+    animation-duration: 3s;
+}
+
+@keyframes titulo{
+    0%{
+        transform: translate(-1000px);
+        opacity: 0;
+    }
+    100%{
+        transform: translate(0px);
+        opacity: 1;
+    }
+}
+
+.imagenAnimada{
+    animation-name: imagen;
+    animation-iteration-count: 1;
+    animation-duration: 3s;
+}
+
+@keyframes imagen{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+>>>>>>> animaciones
 /*Index*/
 
 .gridIndex{
@@ -532,6 +570,44 @@ footer{
         text-decoration: underline;
     }
 
+<<<<<<< HEAD
+=======
+    .tituloAnimado{
+        animation-name: titulo;
+        animation-iteration-count: 1;
+        animation-duration: 3s;
+    }
+    
+    @keyframes titulo{
+        0%{
+            transform: translate(-400px);
+            opacity: 0;
+        }
+        100%{
+            transform: translate(0px);
+            opacity: 1;
+        }
+    }
+
+    .imagenAnimada{
+        animation-name: imagen;
+        animation-iteration-count: 1;
+        animation-duration: 3s;
+    }
+    
+    @keyframes imagen{
+        0%{
+            opacity: 0;
+        }
+        50%{
+            opacity: 0.5;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+
+>>>>>>> animaciones
     @font-face {
         font-family: 'Roboto', sans-serif;
         font-family: 'Roboto Slab', serif;
