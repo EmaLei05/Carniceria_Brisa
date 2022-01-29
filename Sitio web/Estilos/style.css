@@ -80,16 +80,25 @@ p span{
     display: block;
 }
 
+section article:hover{
+    border: 1px solid black;
+}
+
+.link:hover{
+    color: blue;
+    text-decoration: underline;
+}
+
 /*Index*/
 
 .gridIndex{
     display: grid;
     grid-template-areas:
-    "cabeza cabeza cabeza"
-    "cuerpo cuerpo cuerpo"
-    "brazo brazo brazo"
-    "pierna pierna pierna"
-    "pie pie pie";
+    "cabeza"
+    "cuerpo"
+    "brazo"
+    "pierna"
+    "pie";
 }
 
 header{
@@ -125,7 +134,9 @@ footer{
 
 .menu{
     display: flex;
-    justify-content: space-evenly;
+    margin-right: 200px;
+    margin-left: 20px;
+    justify-content: space-between;
     align-content: space-between;
 }
 
@@ -152,11 +163,6 @@ footer{
     margin-top: 15px;
 }
 
-.elegirnos_img{
-    width: 350px;
-    height: 350px;
-}
-
 .aleatorio_carta{
     display: flex;
     flex-flow: row nowrap;
@@ -164,8 +170,10 @@ footer{
 }
 
 .aleatorio_articulos{
+    width: 400px;
     margin-right: 100px;
     margin-top: 15px;
+    margin-bottom: 10px;
 }
 
 .elegirnos_img{
@@ -188,27 +196,33 @@ footer{
 
 .gridProductos{
     grid-template-areas: 
-    "cabeza cabeza cabeza"
-    "menu menu menu"
-    "pagos pagos pagos"
-    "pollo pollo pollo"
-    "cerdo cerdo cerdo"
-    "vaca vaca vaca"
-    "pie pie pie";
+    "cabeza"
+    "secu"
+    "pagos"
+    "pollo"
+    "cerdo"
+    "vaca"
+    "pie";
+}
+
+.secu{
+    grid-area: secu;
+    background-color: red;
+    margin-bottom: 5px;
+    width: 100%;
+    height: 50px;
 }
 
 .menuSecundario{
-    grid-area: menu;
-    background-color: red;
-    margin-left: 500px;
-    margin-bottom:5px;
-    margin-top: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .menuSecundario_item{
-    margin-right: 100px;
+    text-align: center;
+    width: 70px;
 }
-
 .pagos{
     grid-area: pagos;
     background-image: linear-gradient(red,goldenrod);
@@ -235,6 +249,7 @@ footer{
 
 .img_flex{
     display: flex;
+    margin-bottom: 5px;
 }
 
 .caja_articulos{
@@ -257,10 +272,10 @@ footer{
 
 .gridRecetas{
     grid-template-areas: 
-    "cabeza cabeza cabeza"
-    "receta1 receta 1 receta1"
-    "receta2 receta2 receta2"
-    "pie pie pie";
+    "cabeza"
+    "receta1"
+    "receta2"
+    "pie";
 }
 
 .receta1{
@@ -288,11 +303,11 @@ footer{
 
 .gridNosotros{
     grid-template-areas: 
-    "cabeza cabeza cabeza"
-    "nosotros nosotros nosotros"
-    "producto producto producto"
-    "calidad calidad calidad"
-    "pie pie pie";
+    "cabeza"
+    "nosotros"
+    "producto"
+    "calidad"
+    "pie";
 }
 
 .Historia{
@@ -338,10 +353,10 @@ footer{
 
 .gridContacto{
     grid-template-areas: 
-    "cabeza cabeza cabeza"
-    "contacto contacto contacto"
-    "formulario formulario formulario"
-    "pie pie pie";
+    "cabeza"
+    "contacto"
+    "formulario"
+    "pie";
 }
 
 .contacto{
@@ -510,6 +525,11 @@ footer{
 
     p span{
         display: block;
+    }
+
+    .link:hover{
+        color: blue;
+        text-decoration: underline;
     }
 
     @font-face {
